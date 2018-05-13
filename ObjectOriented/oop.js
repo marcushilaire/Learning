@@ -8,12 +8,16 @@ let objectTest = {
 // objectTest.greet(objectTest.message);
 
 // constructor
+
+// ** this does not work with arrow functions
 // let hardware = () => {
-function hardware() {
-  this.print = () => {
-    // console.log("this is a ", model);
-    console.log("hello");
+// **
+
+function Hardware() {
+  this.print = model => {
+    console.log("this is a ", model);
+    // console.log("hello");
   };
 }
-let gpu = new hardware();
+let gpu = new Hardware();
 gpu.print("gtx 1080");
