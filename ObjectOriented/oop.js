@@ -8,7 +8,12 @@ let objectTest = {
 // objectTest.greet(objectTest.message);
 
 // constructor
-let person = () => {
-  console.log("hello");
-};
-person();
+// let hardware = () => {
+function hardware() {
+  this.print = () => {
+    // console.log("this is a ", model);
+    console.log("hello");
+  };
+}
+let gpu = new hardware();
+gpu.print("gtx 1080");
