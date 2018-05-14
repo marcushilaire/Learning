@@ -16,3 +16,5 @@ This repo will include everything from notes on topics I find interesting/challe
 | Redux                       | Future                              |
 | Vue JS                      | Future                              |
 | Secondary Coding Language   | Still selecting a language to learn |
+
+<!-- Contstructors back to basics OOP https://www.youtube.com/watch?v=rlLuL3jYLvA -->
