@@ -17,4 +17,8 @@ This repo will include everything from notes on topics I find interesting/challe
 | Vue JS                                        | Future                              |
 | Secondary Coding Language                     | Still selecting a language to learn |
 
-<!-- Contstructors back to basics OOP https://www.youtube.com/watch?v=rlLuL3jYLvA -->
+<!-- Contstructors back to basics OOP
+    https://www.youtube.com/watch?v=rlLuL3jYLvA
+    Bind and basics
+    https://www.youtube.com/watch?v=GhbhD1HR5vk&list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub
+-->
