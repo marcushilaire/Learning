@@ -15,5 +15,4 @@ This repo will include everything from notes on topics I find interesting/challe
 | Auth0                       | Future                              |
 | Redux                       | Future                              |
 | Vue JS                      | Future                              |
-| Content in the first column | Content in the second column        |
 | Secondary Coding Language   | Still selecting a language to learn |
