@@ -1,6 +1,8 @@
 # Life Long Learning
 
-My efforts in self teaching after bootcamp
+My efforts in self teaching after bootcamp.
+
+This repo will include everything from notes on topics I find interesting/challenging to deployed full-stack applications.
 
 ## My Plans
 
