@@ -6,16 +6,16 @@ This repo will include everything from notes on topics I find interesting/challe
 
 ## My Plans
 
-| Topic                                         | Progress                            |
-| --------------------------------------------- | ----------------------------------- |
-| Express JS                                    | Proficient - Want to Learn More     |
-| Passport JS                                   | Proficient - Want to Learn More     |
-| Functional Programming                        | Semi Proficient                     |
-| [Object Oriented Programming](ObjectOriented) | In Progress                         |
-| Auth0                                         | Future                              |
-| Redux                                         | Future                              |
-| Vue JS                                        | Future                              |
-| Secondary Coding Language                     | Still selecting a language to learn |
+| Topic                                         | Progress                        |
+| --------------------------------------------- | ------------------------------- |
+| Express JS                                    | Proficient - Want to Learn More |
+| Passport JS                                   | Proficient - Want to Learn More |
+| Functional Programming                        | Semi Proficient                 |
+| [Object Oriented Programming](ObjectOriented) | In Progress                     |
+| Secondary Coding (Python)                     | Up Next                         |
+| Auth0                                         | Future                          |
+| Redux                                         | Future                          |
+| Vue JS                                        | Future                          |
 
 <!-- Contstructors back to basics OOP
     https://www.youtube.com/watch?v=rlLuL3jYLvA
