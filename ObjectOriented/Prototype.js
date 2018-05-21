@@ -33,17 +33,19 @@ Object.setPrototypeOf(cryptoBoom, nvidia);
 // Deeper into protoype
 // let mage = spell => {
 // arrow functions do not work in this case
-function Mage(spell) {
+function Mage(spell, level) {
   this.spell = spell;
+  this.level = level;
 }
 
 Mage.prototype.cast = function() {
-  console.log("Casting", this.spell);
+  console.log(this);
+  console.log("Level", this.level, " Mage casting", this.spell);
 };
 
-// These Objects do not contain the cast function when logged
-var fireMage = new Mage("Pyroblast"); //{spell: "Pyroblast"}
-var frostMage = new Mage("Ice Lance"); //{spell: "Ice Lance"}
+// These Objects do not contain the cast function when logged but have access to them
+var fireMage = new Mage("Pyroblast", 110); //{spell: "Pyroblast", level: 110}
+var frostMage = new Mage("Ice Lance", 90); //{spell: "Ice Lance, level: 90"}
 
 fireMage.cast();
 frostMage.cast();
