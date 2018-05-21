@@ -28,3 +28,16 @@ Object.setPrototypeOf(nvidia, gpu);
 // nvidia.printHardware();
 Object.setPrototypeOf(cryptoBoom, nvidia);
 // cryptoBoom.price();
+
+// *************
+// Deeper into protoype
+function mage(spell) {
+  this.spell = spell;
+}
+
+mage.prototype.cast = function() {
+  console.log("casting", this.spell);
+};
+
+var fireMage = new mage("Pyroblast");
+fireMage.cast();
