@@ -31,6 +31,8 @@ Object.setPrototypeOf(cryptoBoom, nvidia);
 
 // *************
 // Deeper into protoype
+// let mage = spell => {
+// arrow functions do not work in this case
 function mage(spell) {
   this.spell = spell;
 }

@@ -1,4 +1,4 @@
-function Character(name, proff, gender, age, str, hp) {
+let Character = function(name, proff, gender, age, str, hp) {
   this.name = name;
   this.proff = proff;
   this.gender = gender;
@@ -15,12 +15,17 @@ function Character(name, proff, gender, age, str, hp) {
     console.log("hp: " + this.hp);
     console.log("---------");
   };
-}
-var Ruby = new Character("Ruby", "Hunter", "Female", 14, 9, 18);
+};
+
+let Ruby = new Character("Ruby", "Hunter", "Female", 14, 9, 18);
+
 Ruby.printStats();
-var Saitama = new Character("Saitama", "Hero", "Male", 27, 1000000, 500);
+
+let Saitama = new Character("Saitama", "Hero", "Male", 27, 1000000, 500);
+
 Saitama.printStats();
-var attack = function(a, b) {
+
+let attack = function(a, b) {
   console.log(a.name + " attacks " + b.name);
   b.hp = b.hp - a.str;
   if (b.hp < 1) {
@@ -29,13 +34,15 @@ var attack = function(a, b) {
     console.log(b.name + " has " + b.hp + " remaining!");
   }
 };
-var levelUp = function(a) {
+
+let levelUp = function(a) {
   console.log(a.name + " LEVEL UP");
   a.age = a.age + 1;
   a.str = a.str + 5;
   a.hp = a.hp + 25;
   a.printStats();
 };
+
 // levelUp(Ruby);
 attack(Ruby, Saitama);
 attack(Ruby, Saitama);
