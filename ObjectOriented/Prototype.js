@@ -1,3 +1,5 @@
+// Basic information on object prototype
+// *************
 // let printHardware = () => {
 //   console.log(this);
 //   console.log(this.model);
@@ -9,10 +11,20 @@ function printHardware() {
 }
 
 let gpu = {
-  printHardware: printHardware
+  printHardware
 };
+
 let nvidia = {
   model: "gtx1080"
 };
+
+let cryptoBoom = {
+  price() {
+    console.log(this.model, "is far more expensive than it should be");
+  }
+};
+
 Object.setPrototypeOf(nvidia, gpu);
-nvidia.printHardware();
+// nvidia.printHardware();
+Object.setPrototypeOf(cryptoBoom, nvidia);
+// cryptoBoom.price();
