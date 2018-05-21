@@ -22,3 +22,11 @@ This repo will include everything from notes on topics I find interesting/challe
     Bind and basics
     https://www.youtube.com/watch?v=GhbhD1HR5vk&list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub
 -->
+
+<!-- Binding
+https://www.youtube.com/watch?v=PIkA60I0dKU&index=2&list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub
+ -->
+
+ <!-- Prototype
+  https://www.youtube.com/watch?v=YkoelSTUy7A&list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub&index=3
+   -->
