@@ -46,7 +46,7 @@ function randomNumber(min, max) {
 }
 
 Mage.prototype.rollCritical = function(critChance) {
-  return critChance < randomNumber(0, 100);
+  return critChance > randomNumber(0, 100 - critChance);
 };
 
 Mage.prototype.cast = function() {
@@ -74,8 +74,8 @@ Mage.prototype.cast = function() {
 };
 
 // These Objects do not contain the cast function when logged but have access to them
-var fireMage = new Mage("Pyroblast", 15, 50); //{spell: "Pyroblast", level: 110}
-var frostMage = new Mage("Ice Lance", 20, 33); //{spell: "Ice Lance, level: 90"}
+var fireMage = new Mage("Pyroblast", 15, 50); //{spell: "Pyroblast", spellPower: 15: critChance: 50}
+var frostMage = new Mage("Ice Lance", 20, 33); //{spell: "Ice Lance, spellPower: 20, critChance: 33}
 
 // fireMage.cast();
 // frostMage.cast();

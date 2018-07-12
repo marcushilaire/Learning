@@ -30,7 +30,17 @@ test("The correct object for frost made has been created", () => {
 test("Fire mage has pyroblast and not ice lance", () => {
   expect(mages.fireMage.spell).not.toEqual("Ice Lance");
 });
-// test("the anything", () => {
-//   let a;
-//   expect(a).anything();
-// });
+function sum(a, b) {
+  console.log(a + b);
+  return a + b;
+}
+function loopCaller(callback) {
+  for (let i = 0; i < 6; i++) {
+    callback(i, i + 1);
+  }
+}
+test("Counting function calls", () => {
+  const testSum = jest.fn();
+  loopCaller(testSum);
+  expect(testSum).toHaveBeenCalledTimes(6);
+});
