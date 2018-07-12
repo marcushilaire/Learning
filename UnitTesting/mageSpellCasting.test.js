@@ -1,9 +1,23 @@
 var mages = require("../ObjectOriented/Prototype.js");
 
-test("adds 1 + 2 to equal 3", () => {
-  expect(mages.frostMage.cast()).not.toBe(3);
+test("Is Icelance total damage between(inclusive) its minimum(2000) and maximum(12,000)", () => {
+  expect(mages.frostMage.cast().damage).toBeGreaterThanOrEqual(2000);
+  expect(mages.frostMage.cast().damage).toBeLessThanOrEqual(12000);
 });
-test("object assignment", () => {
+
+test("Is PyroBlast total damage between(inclusive) its minimum(1500) and maximum(9000)", () => {
+  expect(mages.fireMage.cast().damage).toBeGreaterThanOrEqual(1500);
+  expect(mages.fireMage.cast().damage).toBeLessThanOrEqual(9000);
+});
+// what is the best way to set up unit testing when the same input gives a defined range of outputs
+// alternatively, should i not set up code that operates in this way
+
+test("Are the prototype functions properly attached", () => {
+  expect(mages.Mage.prototype.cast).toBeDefined();
+  expect(mages.Mage.prototype.cast).not.toBeNull();
+});
+
+test("The correct object for frost made has been created", () => {
   expect(mages.frostMage).toEqual({
     spell: "Ice Lance",
     critChance: 33,
@@ -12,6 +26,11 @@ test("object assignment", () => {
     spellMax: 300
   });
 });
-test("correct mage", () => {
+
+test("Fire mage has pyroblast and not ice lance", () => {
   expect(mages.fireMage.spell).not.toEqual("Ice Lance");
 });
+// test("the anything", () => {
+//   let a;
+//   expect(a).anything();
+// });

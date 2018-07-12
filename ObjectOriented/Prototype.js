@@ -50,26 +50,27 @@ Mage.prototype.rollCritical = function(critChance) {
 };
 
 Mage.prototype.cast = function() {
-  console.log("Casting", this.spell);
-
   // rolling damage of the spell
   var baseDamage = randomNumber(this.spellMin, this.spellMax);
-  // console.log(baseDamage);
 
   // scaling spell damage up
   var scaleDamage = baseDamage * this.spellPower;
-  // console.log(scaleDamage);
 
   // rolling to see if the spell crits
   var critRoll = this.rollCritical(this.critChance);
-  // console.log(critRoll);
 
   //final damage conditional
   if (critRoll) {
-    return `Critical Hit! ${scaleDamage * 2}`;
+    return {
+      damage: scaleDamage * 2,
+      hitType: "Critical"
+    };
   }
 
-  return scaleDamage;
+  return {
+    damage: scaleDamage,
+    hitType: "Normal"
+  };
 };
 
 // These Objects do not contain the cast function when logged but have access to them
@@ -79,4 +80,4 @@ var frostMage = new Mage("Ice Lance", 20, 33); //{spell: "Ice Lance, level: 90"}
 // fireMage.cast();
 // frostMage.cast();
 
-module.exports = { fireMage, frostMage };
+module.exports = { fireMage, frostMage, Mage };
