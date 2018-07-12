@@ -20,6 +20,8 @@ This repo will include everything from notes on topics I find interesting/challe
 
 <!-- Unit Testing
 https://www.youtube.com/watch?v=Eu35xM76kKY&list=PL0zVEGEvSaeF_zoW9o66wa_UCNE3a7BEr
+
+https://jestjs.io/docs/en/getting-started
 -->
 
 <!-- Contstructors back to basics OOP
