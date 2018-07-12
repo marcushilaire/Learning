@@ -34,11 +34,13 @@ function sum(a, b) {
   console.log(a + b);
   return a + b;
 }
+
 function loopCaller(callback) {
   for (let i = 0; i < 6; i++) {
     callback(i, i + 1);
   }
 }
+
 test("Counting function calls", () => {
   const testSum = jest.fn();
   loopCaller(testSum);
