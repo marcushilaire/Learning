@@ -7,7 +7,8 @@ const sum = (accum, currVal, index, array) => {
   console.log("The array being reduced:", array);
   console.log("======");
   return accum + currVal;
-};
+}; // A simple function that shows all parameters of the reduce callback
+
 // If nothing is returned from the callback function, reduce will return undefined
 
 console.log(arr.reduce(sum)); //60
