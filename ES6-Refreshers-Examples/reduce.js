@@ -24,7 +24,7 @@ const stringify = (accum, currVal, index, array) => {
     return `${accum.name}, ${currVal.name}`;
   }
   if (index === array.length - 1) {
-    return `The guild had ${array.length} members: ${accum}. `;
+    return `The guild had ${array.length} members: ${accum}, ${currVal.name}. `;
   }
   return `${accum}, ${currVal.name}`;
 };
