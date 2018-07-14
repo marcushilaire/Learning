@@ -1,0 +1,37 @@
+[
+  {
+    "class": "Mage",
+    "level": 110,
+    "name": "Anthyous",
+    "race": "Blood Elf",
+    "faction": "Horde"
+  },
+  {
+    "class": "Warrior",
+    "level": 80,
+    "name": "Heratio",
+    "race": "Goblin",
+    "faction": "Horde"
+  },
+  {
+    "class": "Warlock",
+    "level": 90,
+    "name:": "Johnothan",
+    "race:": "Human",
+    "faction": "Alliance"
+  },
+  {
+    "class": "Hunter",
+    "level": 80,
+    "name": "Joseph",
+    "race": "Dwarf",
+    "faction": "Alliance"
+  },
+  {
+    "class": "Demonhunter",
+    "level": 98,
+    "name": "Ilidan",
+    "race": "Nightelf",
+    "faction": "Alliance"
+  }
+]
