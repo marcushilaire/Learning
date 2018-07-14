@@ -3,7 +3,7 @@ const arr = [10, 11, 12, 13, 14];
 const sum = (accum, currVal, index, array) => {
   console.log("Accumulator:", accum);
   console.log("Current value sent to the callback:", currVal);
-  console.log("Index of the current Value:", index);
+  console.log("Index of the current value:", index);
   console.log("The array being reduced:", array);
   console.log("======");
   return accum + currVal;
