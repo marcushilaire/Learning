@@ -1,3 +1,4 @@
+const characters = require("./characters.json");
 const arr = [10, 11, 12, 13, 14];
 
 const sum = (accum, currVal, index, array) => {
@@ -11,9 +12,21 @@ const sum = (accum, currVal, index, array) => {
 
 // If nothing is returned from the callback function, reduce will return undefined
 
-console.log(arr.reduce(sum)); //60
+// console.log(arr.reduce(sum)); //60
 
-console.log(arr.reduce(sum, 100)); //160
+// console.log(arr.reduce(sum, 100)); //160
 // If no accumulator(seen above as 100) is passed to reduce,
 //  the value at the 0th inex becomes the accumulator and
 //  and reduce begins at the 1st index
+
+const stringify = (accum, currVal, index, array) => {
+  if (index === 1) {
+    return `${accum.name}, ${currVal.name}`;
+  }
+  if (index === array.length - 1) {
+    return `The guild had ${array.length} members: ${accum}. `;
+  }
+  return `${accum}, ${currVal.name}`;
+};
+
+console.log(characters.reduce(stringify)); // The guild had 5 members: Jaina Vol'jin Gul'dan Anduin

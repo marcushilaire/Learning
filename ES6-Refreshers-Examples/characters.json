@@ -2,29 +2,29 @@
   {
     "class": "Mage",
     "level": 110,
-    "name": "Anthyous",
-    "race": "Blood Elf",
-    "faction": "Horde"
-  },
-  {
-    "class": "Warrior",
-    "level": 80,
-    "name": "Heratio",
-    "race": "Goblin",
-    "faction": "Horde"
-  },
-  {
-    "class": "Warlock",
-    "level": 90,
-    "name:": "Johnothan",
-    "race:": "Human",
+    "name": "Jaina",
+    "race": "Human",
     "faction": "Alliance"
   },
   {
     "class": "Hunter",
     "level": 80,
-    "name": "Joseph",
-    "race": "Dwarf",
+    "name": "Vol'jin",
+    "race": "Troll",
+    "faction": "Horde"
+  },
+  {
+    "class": "Warlock",
+    "level": 90,
+    "name": "Gul'dan",
+    "race": "Orc",
+    "faction": "Horde"
+  },
+  {
+    "class": "Priest",
+    "level": 80,
+    "name": "Anduin",
+    "race": "Human",
     "faction": "Alliance"
   },
   {
