@@ -39,15 +39,13 @@ var arr = [
 let filterAlliance = (currentEle, index, array) => {
   console.log("Current Element sent to the Callback:", currentEle.name);
   console.log("Index of the current value", index);
-  //   console.log("this is a lot");
-  //   console.log("The array being filtered", array);
   console.log("---");
   if (currentEle.faction === "Alliance") {
     return true;
   }
   return false;
 };
+
 console.log(arr.filter(filterAlliance));
 
-// let mapName = currentEle => currentEle.name;
-// console.log(arr.map(mapName));
+// The amount of times filter runs is equal to arr.length
