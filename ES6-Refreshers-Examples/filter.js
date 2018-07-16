@@ -1,10 +1,10 @@
 const characters = require("./characters.json");
 
-const filterAlliance = (currentEle, index, array) => {
-  console.log("Current Element sent to the Callback:", currentEle.name);
+const filterAlliance = (currVal, index, array) => {
+  console.log("Current Element sent to the Callback:", currVal.name);
   console.log("Index of the current value", index);
   console.log("---");
-  if (currentEle.faction === "Alliance") {
+  if (currVal.faction === "Alliance") {
     return true;
   }
   return false;
