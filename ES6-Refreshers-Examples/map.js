@@ -8,8 +8,8 @@ const square = (currVal, index, array) => {
 };
 // console.log(arr.map(square)); //[ 4, 16, 36, 64, 1369 ]
 
-const apple = currVal => currVal.name;
-const banana = ` The guild had ${characters.length} members: ${characters
-  .map(apple)
-  .join(`, `)}.`;
-console.log(banana);
+const convertName = currVal => currVal.name;
+const stringify = ` The guild had ${
+  characters.length
+} members: ${characters.map(convertName).join(`, `)}.`;
+console.log(stringify);
