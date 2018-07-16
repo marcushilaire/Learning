@@ -9,7 +9,7 @@ test("Is PyroBlast total damage between(inclusive) its minimum(1500) and maximum
   expect(mages.fireMage.cast().damage).toBeGreaterThanOrEqual(1500);
   expect(mages.fireMage.cast().damage).toBeLessThanOrEqual(9000);
 });
-// what is the best way to set up unit testing when the same input gives a defined range of outputs
+// What is the best way to set up unit testing when the same input gives a defined range of outputs
 // alternatively, should i not set up code that operates in this way
 
 test("Are the prototype functions properly attached", () => {
@@ -30,16 +30,12 @@ test("The correct object for frost made has been created", () => {
 test("Fire mage has pyroblast and not ice lance", () => {
   expect(mages.fireMage.spell).not.toEqual("Ice Lance");
 });
-function sum(a, b) {
-  console.log(a + b);
-  return a + b;
-}
 
-function loopCaller(callback) {
+const loopCaller = callback => {
   for (let i = 0; i < 6; i++) {
     callback(i, i + 1);
   }
-}
+};
 
 test("Counting function calls", () => {
   const testSum = jest.fn();

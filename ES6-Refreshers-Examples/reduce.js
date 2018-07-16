@@ -19,6 +19,8 @@ const sum = (accum, currVal, index, array) => {
 //  the value at the 0th inex becomes the accumulator and
 //  and reduce begins at the 1st index
 
+// =====
+// A more involved example based on characters.json
 const stringify = (accum, currVal, index, array) => {
   if (index === 1) {
     // First item in the array

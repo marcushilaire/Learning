@@ -41,9 +41,9 @@ function Mage(spell, spellPower, critChance) {
   this.spellMax = 300;
 }
 
-function randomNumber(min, max) {
+const randomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
-}
+};
 
 Mage.prototype.rollCritical = function(critChance) {
   return critChance > randomNumber(0, 100 - critChance);
