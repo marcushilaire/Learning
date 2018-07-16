@@ -1,4 +1,4 @@
-var mages = require("../ObjectOriented/Prototype.js");
+const mages = require("../ObjectOriented/Prototype.js");
 
 test("Is Icelance total damage between(inclusive) its minimum(2000) and maximum(12,000)", () => {
   expect(mages.frostMage.cast().damage).toBeGreaterThanOrEqual(2000);
