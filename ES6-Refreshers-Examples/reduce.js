@@ -34,4 +34,4 @@ const stringify = (accum, currVal, index, array) => {
   return `${accum}, ${currVal.name}`;
 };
 
-console.log(characters.reduce(stringify)); // The guild had 5 members: Jaina Vol'jin Gul'dan Anduin
+console.log(characters.reduce(stringify)); // The guild had 5 members: Jaina, Vol'jin, Gul'dan, Anduin, Ilidan.

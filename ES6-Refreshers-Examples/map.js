@@ -15,4 +15,4 @@ const convertName = currVal => currVal.name;
 const stringify = ` The guild had ${
   characters.length
 } members: ${characters.map(convertName).join(`, `)}.`;
-console.log(stringify);
+console.log(stringify); // The guild had 5 members: Jaina, Vol'jin, Gul'dan, Anduin, Ilidan.
