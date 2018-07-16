@@ -10,6 +10,6 @@ const filterAlliance = (currVal, index, array) => {
   return false;
 };
 
-console.log(characters.filter(filterAlliance));
-
+let filteredChars = characters.filter(filterAlliance);
 // The amount of times filter runs is equal to arr.length
+module.exports = { filteredChars };
