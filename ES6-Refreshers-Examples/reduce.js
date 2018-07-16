@@ -21,11 +21,14 @@ const sum = (accum, currVal, index, array) => {
 
 const stringify = (accum, currVal, index, array) => {
   if (index === 1) {
+    // First item in the array
     return `${accum.name}, ${currVal.name}`;
   }
   if (index === array.length - 1) {
+    // Last item in the array
     return `The guild had ${array.length} members: ${accum}, ${currVal.name}. `;
   }
+  // Every other item in the array
   return `${accum}, ${currVal.name}`;
 };
 
