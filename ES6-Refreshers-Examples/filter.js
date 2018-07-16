@@ -9,7 +9,15 @@ const filterAlliance = (currVal, index, array) => {
   }
   return false;
 };
+// The amount of times filter runs is equal to arr.length
 
 let filteredChars = characters.filter(filterAlliance);
-// The amount of times filter runs is equal to arr.length
-module.exports = { filteredChars };
+
+// Using map to create a string from the resulting array
+const convertName = character => character.name;
+
+const stringify = `The guild has ${
+  filteredChars.length
+} alliance members: ${filteredChars.map(convertName).join(", ")}.`;
+
+module.exports = { stringify, filteredChars };

@@ -10,7 +10,7 @@ test("Is PyroBlast total damage between(inclusive) its minimum(1500) and maximum
   expect(mages.fireMage.cast().damage).toBeLessThanOrEqual(9000);
 });
 // What is the best way to set up unit testing when the same input gives a defined range of outputs
-// alternatively, should i not set up code that operates in this way
+// alternatively, should I not set up code that operates in this way?
 
 test("Are the prototype functions properly attached", () => {
   expect(mages.Mage.prototype.cast).toBeDefined();
