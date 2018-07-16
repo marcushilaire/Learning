@@ -77,7 +77,4 @@ Mage.prototype.cast = function() {
 var fireMage = new Mage("Pyroblast", 15, 50); //{spell: "Pyroblast", spellPower: 15: critChance: 50}
 var frostMage = new Mage("Ice Lance", 20, 33); //{spell: "Ice Lance, spellPower: 20, critChance: 33}
 
-// fireMage.cast();
-// frostMage.cast();
-
 module.exports = { fireMage, frostMage, Mage };
