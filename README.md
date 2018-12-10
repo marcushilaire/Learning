@@ -38,3 +38,7 @@ https://www.youtube.com/watch?v=PIkA60I0dKU&index=2&list=PL0zVEGEvSaeHBZFy6Q8731
 <!-- Prototype
   https://www.youtube.com/watch?v=YkoelSTUy7A&list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub&index=3
 -->
+<!-- Java
+ https://docs.oracle.com/javase/tutorial/index.html tutorial repo
+ https://docs.oracle.com/javase/tutorial/getStarted/problems/index.html common errors
+  -->
