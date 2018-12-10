@@ -8,13 +8,13 @@ This repo will include everything from notes on topics I find interesting/challe
 
 | Topic                                               | Progress                        |
 | --------------------------------------------------- | ------------------------------- |
+| [Java](Java)                                        | Active                          |
 | Express JS                                          | Proficient - Want to Learn More |
 | Passport JS                                         | Proficient - Want to Learn More |
 | Functional Programming                              | Semi Proficient                 |
 | [Unit Testing](UnitTesting)                         | In Progress                     |
 | [Regular Expressions](RegEx)                        | In Progress                     |
 | [Object Oriented Programming in JS](ObjectOriented) | On Hold                         |
-| Secondary Coding (Python)                           | Future                          |
 | Auth0                                               | Future                          |
 | Redux                                               | Future                          |
 | Vue JS                                              | Future                          |
