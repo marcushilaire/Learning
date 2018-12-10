@@ -9,6 +9,7 @@ const filterAlliance = (currVal, index, array) => {
   }
   return false;
 };
+// currVal is passed on to the created array if the callback returns true
 // The amount of times filter runs is equal to arr.length
 
 let filteredChars = characters.filter(filterAlliance);

@@ -1,4 +1,31 @@
-let amber = "Amber is the color of your energy";
-let flyte = "Victoria falls \n No one knows \n How low she goes.";
-let ipsum =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate, lectus sed pharetra aliquet, ante massa molestie turpis, eget molestie odio quam id nisl. Nulla consequat gravida mauris, nec aliquet odio tempor ut. Maecenas ut elit in nunc efficitur dapibus quis sit amet urna. Vivamus eu dolor congue, tempus odio nec, eleifend nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam congue non justo eget fermentum. Nam ac nisi mollis dolor sollicitudin ornare. Sed faucibus vitae nunc id ultricies. Quisque odio dolor, pretium eget magna nec, congue maximus nunc. Nulla finibus augue nibh, ac venenatis lacus aliquam sit amet. Sed nec auctor nibh. Integer mollis, ligula vitae maximus accumsan, lectus tellus tristique tortor, a euismod enim nibh et turpis. In nec enim a urna dapibus ultrices vitae eget diam. In eleifend nulla in pellentesque elementum. Donec at libero vel nisi dignissim lobortis. Nulla sodales faucibus lectus, vitae elementum justo ullamcorper tempus.";
+const fs = require("fs");
+
+const dataTrim = currVal => {
+  if (currVal.length > 0) {
+    return true;
+  }
+  return false;
+};
+
+const callback = (err, data) => {
+  if (err) throw err;
+
+  //   let dataArr = data.split("\n").filter(dataTrim);
+  //   dataArr.forEach(function(currVal) {
+  //     console.log(currVal.match(fullWords));
+  //   }); //
+  //   console.log(
+  //     data
+  //       .split("\n")
+  //       // .filter(dataTrim)
+  //       .match(victoria)
+  //   );
+  console.log(data.split("\n"));
+};
+fs.readFile("../Helpers/Flyte.txt", "utf8", callback);
+
+// Basic string searching
+const noCaps = /[a-z]/g;
+const capVowels = /[AEIOU]/;
+const fullWords = /\w/g;
+const victoria = /[falls]\wg/;
