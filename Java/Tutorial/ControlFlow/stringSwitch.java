@@ -1,4 +1,4 @@
-public class StringSwitchDemo {
+class StringSwitchDemo {
 
     public static int getMonthNumber(String month) {
 
