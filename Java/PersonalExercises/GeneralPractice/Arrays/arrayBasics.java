@@ -2,7 +2,9 @@ class ArrayDemo {
     public static void main(String[] args) {
         // declares an array of integers
         // int[] anArray;
+
         // *note that arrays in java are immutable?*
+        // *an array can only hold a single datatype*
 
         // other options include
         // byte[] anArrayOfBytes;
