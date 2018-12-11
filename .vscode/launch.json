@@ -2,6 +2,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PrePostDemo",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "PrePostDemo",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ArrayDemo",
             "request": "launch",
             "cwd": "${workspaceFolder}",
