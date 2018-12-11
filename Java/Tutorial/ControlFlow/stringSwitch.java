@@ -1,6 +1,7 @@
 class StringSwitchDemo {
 
     public static int getMonthNumber(String month) {
+        // does int here define the kind of data that will be returned?
 
         int monthNumber = 0;
 
