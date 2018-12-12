@@ -1,3 +1,5 @@
+import org.w3c.dom.css.Rect;
+
 public class CreateObjectDemo {
 
     public static void main(String[] args) {
@@ -6,11 +8,13 @@ public class CreateObjectDemo {
         Point originOne = new Point(23, 94);
         Rectangle rectOne = new Rectangle(originOne, 100, 200);
         Rectangle rectTwo = new Rectangle(50, 100);
+        Rectangle rectThree = new Rectangle();
 
         // display rectOne's width, height, and area
         System.out.println("Width of rectOne: " + rectOne.getDimensions("width"));
         System.out.println("Height of rectOne: " + rectOne.getDimensions("height"));
         System.out.println("Area of rectOne: " + rectOne.getArea());
+        System.out.println("Area of rectThree: " + rectThree.getArea());
 
         // set rectTwo's position
         rectTwo.move(originOne.x, originOne.y);

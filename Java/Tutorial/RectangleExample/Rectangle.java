@@ -5,8 +5,9 @@ public class Rectangle {
 
     // four constructors
     public Rectangle() { // if new Rectangle is called without arguments
-        origin = new Point(0, 0);
-    }// a rectangle with 0 width and height is created at (0,0)
+        // origin = new Point(0, 0);
+        this(new Point(0, 0), 16, 9);
+    }// calls the constructor on line 22
 
     public Rectangle(Point p) {// if new Rectangle is called with only Point P
         origin = p;
