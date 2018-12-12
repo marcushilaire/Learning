@@ -1,27 +1,35 @@
-class Bicycle {
+public class Bicycle {
 
-    int cadence = 0;
-    int speed = 0;
-    int gear = 1;
+    // the Bicycle class has
+    // three fields
+    public int cadence;
+    public int gear;
+    public int speed;
 
-    void changeCadence(int newValue) {
+    // the Bicycle class has
+    // one constructor
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+
+    // the Bicycle class has
+    // four methods
+    public void setCadence(int newValue) {
         cadence = newValue;
     }
 
-    void changeGear(int newValue) {
+    public void setGear(int newValue) {
         gear = newValue;
     }
 
-    void speedUp(int increment) {
-        speed = speed + increment;
+    public void applyBrake(int decrement) {
+        speed -= decrement;
     }
 
-    void applyBrakes(int decrement) {
-        speed = speed - decrement;
-    }
-
-    void printStates() {
-        System.out.println("cadence:" + cadence + " speed:" + speed + " gear:" + gear);
+    public void speedUp(int increment) {
+        speed += increment;
     }
 
 }
