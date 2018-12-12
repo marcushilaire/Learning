@@ -17,7 +17,8 @@ class BreakWithLabelDemo {
         // }
         // }
 
-        // Refactored using the prefered form of for
+        // Refactored using the prefered form of forEach
+        // I cannot access the iterator here like I can in javascript
         search: for (int[] i : arrayOfInts) {
             for (int j : i) {
                 if (j == searchfor) {
