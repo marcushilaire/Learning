@@ -42,12 +42,12 @@ public class Rectangle {
         int output = 0;
         switch (dimension) {
         case "width": {
-            output = this.width;
+            output = width;
             break;
         }
 
         case "height": {
-            output = this.height;
+            output = height;
             break;
         }
 
