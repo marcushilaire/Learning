@@ -24,4 +24,4 @@ public class CreateObjectDemo {
         System.out.println("X Position of rectTwo: " + rectTwo.origin.x);
         System.out.println("Y Position of rectTwo: " + rectTwo.origin.y);
     }
-}
+}// compiling this class will compile all other referenced classes

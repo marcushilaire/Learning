@@ -4,25 +4,25 @@ public class Rectangle {
     public Point origin;
 
     // four constructors
-    public Rectangle() {
+    public Rectangle() { // if new Rectangle is called without arguments
         origin = new Point(0, 0);
-    }
+    }// a rectangle with 0 width and height is created at (0,0)
 
-    public Rectangle(Point p) {
+    public Rectangle(Point p) {// if new Rectangle is called with only Point P
         origin = p;
-    }
+    }// a rectangle with 0 width and height is created at Point p
 
-    public Rectangle(int w, int h) {
+    public Rectangle(int w, int h) {// if new Rectangle is called with Width W and Height H
         origin = new Point(0, 0);
         width = w;
         height = h;
-    }
+    }// a rectanlge with Width W and Height H is created at (0,0)
 
-    public Rectangle(Point p, int w, int h) {
+    public Rectangle(Point p, int w, int h) {// if new Rectangle is called with Width W and Height H and Point P
         origin = p;
         width = w;
         height = h;
-    }
+    }// a rectanlge with Width W and Height H is created at Point P
 
     // a method for moving the rectangle
     public void move(int x, int y) {
