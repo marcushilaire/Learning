@@ -1,4 +1,5 @@
 public class Bicycle {
+    // Class names should be capitalized
 
     // the Bicycle class has
     // three fields
@@ -14,8 +15,12 @@ public class Bicycle {
         speed = startSpeed;
     }
 
+    // Is the keyword void the only difference between the two?
+
     // the Bicycle class has
     // four methods
+    // *the first/only word in a method should be a verb*
+    // *example of method signature : setCadence(int newValue)*
     public void setCadence(int newValue) {
         cadence = newValue;
     }
