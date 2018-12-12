@@ -2,6 +2,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Loops",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Loops",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SwitchDemo2",
             "request": "launch",
             "cwd": "${workspaceFolder}",
