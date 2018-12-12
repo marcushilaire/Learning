@@ -2,6 +2,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ShadowTest",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ShadowTest",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ContinueWithLabelDemo",
             "request": "launch",
             "cwd": "${workspaceFolder}",
