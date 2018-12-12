@@ -8,20 +8,20 @@ public class CreateObjectDemo {
         Rectangle rectTwo = new Rectangle(50, 100);
 
         // display rectOne's width, height, and area
-        System.out.println("Width of rectOne: " + rectOne.width);
-        System.out.println("Height of rectOne: " + rectOne.height);
+        System.out.println("Width of rectOne: " + rectOne.getDimensions("width"));
+        System.out.println("Height of rectOne: " + rectOne.getDimensions("height"));
         System.out.println("Area of rectOne: " + rectOne.getArea());
 
         // set rectTwo's position
-        rectTwo.origin = originOne;
+        rectTwo.move(originOne.x, originOne.y);
 
         // display rectTwo's position
-        System.out.println("X Position of rectTwo: " + rectTwo.origin.x);
-        System.out.println("Y Position of rectTwo: " + rectTwo.origin.y);
+        System.out.println("X Position of rectTwo: " + rectTwo.getX());
+        System.out.println("Y Position of rectTwo: " + rectTwo.getY());
 
         // move rectTwo and display its new position
         rectTwo.move(40, 72);
-        System.out.println("X Position of rectTwo: " + rectTwo.origin.x);
-        System.out.println("Y Position of rectTwo: " + rectTwo.origin.y);
+        System.out.println("X Position of rectTwo: " + rectTwo.getX());
+        System.out.println("Y Position of rectTwo: " + rectTwo.getY());
     }
 }// compiling this class will compile all other referenced classes

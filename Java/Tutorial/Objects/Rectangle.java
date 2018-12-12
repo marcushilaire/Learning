@@ -1,7 +1,7 @@
 public class Rectangle {
-    public int width = 0;
-    public int height = 0;
-    public Point origin;
+    private int width = 0;
+    private int height = 0;
+    private Point origin;
 
     // four constructors
     public Rectangle() { // if new Rectangle is called without arguments
@@ -28,6 +28,31 @@ public class Rectangle {
     public void move(int x, int y) {
         origin.x = x;
         origin.y = y;
+    }
+
+    public int getX() {
+        return origin.x;
+    }
+
+    public int getY() {
+        return origin.y;
+    }
+
+    public int getDimensions(String dimension) {
+        int output = 0;
+        switch (dimension) {
+        case "width": {
+            output = this.width;
+            break;
+        }
+
+        case "height": {
+            output = this.height;
+            break;
+        }
+
+        }
+        return output;
     }
 
     // a method for computing the area of the rectangle
