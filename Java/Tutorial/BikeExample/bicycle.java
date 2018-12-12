@@ -7,6 +7,8 @@ public class Bicycle {
     public int gear;
     public int speed;
 
+    private static int numberOfBicycles = 0;
+
     // constructors are called when the object is created from the class
     // they allow variables to be passed to the fields of an object
     // Bicycle myBike = new Bicycle(30, 0, 8);
@@ -14,12 +16,14 @@ public class Bicycle {
         gear = startGear;
         cadence = startCadence;
         speed = startSpeed;
+
+        // increment number of Bicycles
+        // and assign ID number
+        id = ++numberOfBicycles;
     }
 
     public Bicycle() {
-        gear = 1;
-        cadence = 10;
-        speed = 0;
+        this(10, 0, 1);
     }
     // Java can differenciate between different constructors in the same class
     // this is becxause their signatures, in this case parameters, are different
@@ -49,6 +53,10 @@ public class Bicycle {
 
     public void speedUp(int increment) {
         speed += increment;
+    }
+
+    public static int getNumberOfBicycles() {
+        return numberOfBicycles;
     }
 
 }
