@@ -7,20 +7,34 @@ public class Bicycle {
     public int gear;
     public int speed;
 
-    // the Bicycle class has
-    // one constructor
+    // constructors are called when the object is created from the class
+    // they allow variables to be passed to the fields of an object
+    // Bicycle myBike = new Bicycle(30, 0, 8);
     public Bicycle(int startCadence, int startSpeed, int startGear) {
         gear = startGear;
         cadence = startCadence;
         speed = startSpeed;
     }
 
-    // Is the keyword void the only difference between the two?
+    public Bicycle() {
+        gear = 1;
+        cadence = 10;
+        speed = 0;
+    }
+    // Java can differenciate between different constructors in the same class
+    // this is becxause their signatures, in this case parameters, are different
 
     // the Bicycle class has
     // four methods
     // *the first/only word in a method should be a verb*
-    // *example of method signature : setCadence(int newValue)*
+
+    // *example of method signature : say(int number)*
+    // signatures allow methods of the same name with different parameters
+    // say(int number) and say(String word) are different to the compiler
+    // this is called overloading
+
+    // void in the following methods refers to the type of data returned when the
+    // method is invoked
     public void setCadence(int newValue) {
         cadence = newValue;
     }

@@ -11,6 +11,6 @@ class HelloWorldApp {
         System.out.println("Hello World!"); // Display the string.
         for (String arg : args) {
             System.out.println(arg);
-        } // forloop to print all command line arguments
+        } // forEach to print all command line arguments
     }
 }
