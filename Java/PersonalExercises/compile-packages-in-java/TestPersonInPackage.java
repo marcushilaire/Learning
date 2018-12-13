@@ -1,7 +1,7 @@
 import personpackage.Person;
 
 public class TestPersonInPackage {
-    public static void main(String... args) {
+    public static void main(String[] args) {
         Person person = new Person();
         person.setFirstName("Darkness");
         person.setLastName("my old friend");
