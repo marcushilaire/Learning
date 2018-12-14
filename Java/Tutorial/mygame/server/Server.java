@@ -22,7 +22,7 @@ public class Server {
 
 		Utilities.printMsg("accepting client connections");
 
-		while (true) {
+		while (true) {// infinite loop
 			try {
 				Socket clientSocket = serverSocket.accept();
 				new Client(clientSocket).start();
