@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Server",
+            "request": "launch",
+            "mainClass": "mygame.server.Server"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ShadowTest",
             "request": "launch",
             "cwd": "${workspaceFolder}",
